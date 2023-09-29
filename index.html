@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="Image">
+      <center>
+      <img src="kombucha.jpg" alt="white jesus" width="600">
+      </center>
+    </div>
+    <div class="Text">
+      <h1><br><br>how to grow some culture</h1>
+
+      <button class="accordion">move the resources</button>
+      <div class="panel">
+      <p>
+        <ul>
+          <li>1 scoby</li>
+          <li>gallon or larger jar, glass or ceramic (no plastic or metal)</li>
+          <li>8-10 bags (or 1/2 oz of loose leaf) of black or 1:1 black + green tea (no flavored teas like earl grey)</li>
+          <li>1 cup of sugar (brown or white)</li>
+          <li>1/2 cup - 2 cups ofstarter liquid (plain/original/unflavored kombucha)</li>
+          <li>3 1/2 quarts of water</li>
+          <li>tightly woven cotton cloth (old sheets, shirts, bandanas work; nocheese cloth — fruit flies will get in this way)</li>
+          <li>rubber band</li>
+        </ul>
+      </p>
+      </div>
+      <br><br>
+      <button class="accordion">kombucha batch brew</button>
+      <div class="panel">
+      <p>
+        <ol>
+          <li>Wash your hands, equipment, and surfaces with soap and water.</li>
+          <li>Boil water, add tea and steep for 15 minutes.</li>
+          <li>Remove tea, and while water is still warm, add sugar. Stir until dissolved.</li>
+          <li>Let cool to room temperature — this can take several hours. I usually let it sit overnight or brew in the morning so it's ready by the evening.</li>
+          <li>Once the brew is completely cool, add starter liquid into the jar and then insert scoby.</li>
+          <li>Cover the jar with a cloth and a rubber band.</li>
+          <li>Store in a dark, slightly ventilated, mild-warmer climate place where it won't move around too much. Its particularly important not to move the new batches the first days of its formation.</li>
+          <li>Leave for 7-14+ days. Start tasting at 7 days to see if balance between sweet & vinegary is achieved. If too sweet, leave longer. 9-11 days is my sweet spot. 9 during warmer months, 12+ during cooler months. Tip: write it in your schedule to taste the kombucha — it's very easy to forget otherwise.</li>
+          <li>Once its ready, thank your scobys and remove them from the brew. Store scobys in a separate jar, always with a cloth & rubber band and some of the plain kombucha you just made. This is now your “scoby bank” or “scoby hotel.”Scobys can stay in this liquid for months at a time before it needs to get replaced with more sweetened tea and starter liquid while always keeping some of the kombucha they are in.</li>
+          <li>At this point your kombucha is ready. You can choose to bottle and refrigerate your kombucha and drink it now, you can skip to the carbonate/2nd ferment process if you want it to be bubbly, or you can flavor and then carbonate in the order I have outlined below. I really enjoy flavoring it but it's not absolutely necessary to reap the benefits of kombucha.</li>
+        </ol>           
+      </p>
+      </div>
+
+      <br><br>
+      <button class="accordion">get some flavor</button>
+      <div class="panel">
+      <p>
+        <ul>
+          <li>For fruit flavors, add about 1-2 cups of chopped fruit per gallon. If using frozen fruit, I like to warm fruit over the stove top with a dash of sugar. Frozen juice works too. For herb flavors, use 2-4 tablespoons of dried herbs or about</li>
+          <li>1/4-1/2cup of fresh herbs. Sometimes I steep the herbs in a small amount of boiled water for 15 minutes or decoct/simmer (if using roots, bark or dried berries ie: ginger, cinnamon, hawthorn berries) in a small amount of water for 15 minutes. Feel free to mix and match fruits and herbs. Ideally wait until these infusions cool before adding kombucha.</li>
+          <li>Pour the kombucha over the fruit/herbs & close the jar. After 12-24 hours, strain & bottle. Don't leave longer than 36 hours in fruit otherwise the fruit will start a separate not so tasty fermentation process.</li>
+          <li>To carbonate, simply leave strained kombucha stored in tightly sealed bottles at room temperature for 1-3 days. I like to use swing top glass bottles. It's important you keep your eye on this part of the process and not leave them carbonating too long or the bottles will explode. Refrigerate before opening. If you open them at room temperature, they will make an explosive mess!</li>
+        </ul>       
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+</html>
